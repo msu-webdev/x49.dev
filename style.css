@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --x49-bg: #212230;
+  --x49-bg-dark: #15161F;
+  --x49-gray: #8AA2A9;
+  --x49-green: #40F99B;
+  --x49-text: #f3f6f6;
+}
+
+body {
+  background: var(--x49-bg);
+  color: #f3f6f6;
+  margin: 0;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+  color: var(--x49-gray);
+}
+
+p, ul, ol {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+.highlight {
+  color: var(--x49-green);
+}
+
+ul.hero-grid {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+ul.hero-grid li {
+  flex-grow: 1;
+}
+
+ul.hero-grid li a {
+  display: block;
+  width: 350px;
+  padding: 20px;
+  background: var(--x49-bg-dark);
+  border-radius: 3px;
+}
