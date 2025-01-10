@@ -45,6 +45,11 @@ p, ul, ol {
   margin-bottom: 1.2rem;
 }
 
+a:link, a:visited {
+  color: var(--x49-green);
+  background: var(--x49-bg-dark)
+}
+
 .container {
   margin: 0 auto;
   max-width: 800px;
@@ -72,8 +77,15 @@ ul.hero-grid li {
 
 ul.hero-grid li a {
   display: block;
-  width: 350px;
-  padding: 20px;
+  width: 336px;
+  padding: 25px;
   background: var(--x49-bg-dark);
+  border: 1px solid var(--x49-bg-dark);
   border-radius: 3px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+ul.hero-grid li a:hover {
+  border: 1px solid var(--x49-green);
 }
